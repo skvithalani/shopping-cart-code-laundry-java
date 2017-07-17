@@ -16,14 +16,24 @@ public class ProductService {
             new Product(14.50, "DIS_15-PROD_03", "I am getting tired of this")
     );
 
+    private List<Product> products;
+
+    public ProductService() {
+        this.products = ALL_PRODUCTS;
+    }
+
+    public ProductService(final List<Product> products) {
+        this.products = products;
+    }
+
     public List<String> getProductCodes() {
-        return ALL_PRODUCTS.stream()
+        return products.stream()
                 .map(Product::getProductCode)
                 .collect(Collectors.toList());
     }
 
     public Product getProduct(final String code) {
-        for (final Product product : ALL_PRODUCTS) {
+        for (final Product product : products) {
             if (product.getProductCode().equals(code)) {
                 return product;
             }
