@@ -25,5 +25,17 @@ http://localhost:8080/v1/products
 
 In no particular order:
 
+* Implement a discount of 20%, the products eligible for which will be identified by the product code starting with "DIS_20". On purchase of each such product, the customer earns, 1 loyalty point for every $20 spent
+* Implement an offer on group of products, eg. "Buy 2 get 1 free" on specific products identified by product code starting with "BULK_BUY_2_GET_1"
+
+
+### Tasks still to complete for JoI team
+
+- [ ] extensions to do with the business domain
+- [ ] extensions to do with the API
+- [ ] Add more instructions to README
+
+
+
 
 
