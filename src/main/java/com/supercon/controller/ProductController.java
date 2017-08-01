@@ -25,10 +25,7 @@ public class ProductController {
     @GetMapping("/v1/products/{code}")
     public ResponseEntity<Product> getProduct(@PathVariable final String code) {
         final Product product = productService.getProduct(code);
-        if (product != null) {
-            return new ResponseEntity<>(product, HttpStatus.OK);
-        }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(product, HttpStatus.OK);
     }
 
 }
