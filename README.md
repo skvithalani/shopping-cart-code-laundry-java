@@ -29,7 +29,6 @@ In your terminal run `./gradlew bootrun`. Then navigate to http://localhost:8080
 
 ### Tasks still to complete for JoI team
 
-- [ ] Better names for Products
 - [ ] extensions to do with the business domain
 - [ ] extensions to do with the API
 - [ ] Add more instructions to README
