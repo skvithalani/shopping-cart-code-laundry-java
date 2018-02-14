@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 @Service
 public class ProductService {
 
-    // Simple source of products, good enough for now.
+    // Simple source of products: would come from a database in the real world.
     private static final List<Product> ALL_PRODUCTS = Arrays.asList(
             new Product(24.99, "CHAIR_RED", "Red plastic chair"),
             new Product(24.99, "DIS_10-CHAIR_BLUE", "Blue plastic chair"),
