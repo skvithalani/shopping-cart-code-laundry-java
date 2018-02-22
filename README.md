@@ -31,6 +31,7 @@ Make sure you have installed the Buildship plugin into Eclipse
 
 * Go to Eclipse Marketplace (Help -> Eclipse Marketplace)
 * Search from Buildship and install the plugin
+  * If you are using Java 9, ensure you have the latest version of Buildship
 * Restart Eclipse
 
 After having the plugin installed you should now be able to you import the project into Eclipse
@@ -46,4 +47,5 @@ If this runs successfully we will have verified that your command line is setup 
 
 ### Run locally
 
-In your terminal run `./gradlew bootrun`. Then navigate to http://localhost:8080/v1/products in your browser to test the app is running.
+In your terminal run `./gradlew bootRun`. Then navigate to http://localhost:8080/v1/products in your browser
+to test the app is running.
