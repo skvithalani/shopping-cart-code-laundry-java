@@ -25,6 +25,14 @@ public class ShoppingCart {
         this.cartState = cartState;
     }
 
+    public ShoppingCart(Customer customer, List<Product> products, String cartState,
+        OrderService orderService) {
+        this.products = products;
+        this.customer = customer;
+        this.cartState = cartState;
+        this.orderService = orderService;
+    }
+
     public void addProduct(Product product) {
         products.add(product);
     }

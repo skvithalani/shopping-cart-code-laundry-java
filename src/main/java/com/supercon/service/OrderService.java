@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class OrderService {
+public abstract class OrderService {
 
     public void showConfirmation(Customer customer, List<Product> products, double totalPrice, int loyaltyPointsEarned) {
         //show confirmation
@@ -21,5 +21,4 @@ public class OrderService {
         //place order
         return new Order(customer, products);
     }
-
 }
